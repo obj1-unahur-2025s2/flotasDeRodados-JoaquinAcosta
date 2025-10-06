@@ -1,0 +1,15 @@
+import rodados.*
+
+describe "Probando el Corsa" {
+    const corsa = new Corsa(color=rojo)
+
+  test "su capacidad" {
+    assert.equals(4, corsa.capacidad())
+  }
+  test "su velocidad maxima" {
+    assert.equals(150, corsa.velocidadMaxima())
+  }
+  test "su peso" {
+    assert.equals(1300, corsa.peso())
+  }
+}
